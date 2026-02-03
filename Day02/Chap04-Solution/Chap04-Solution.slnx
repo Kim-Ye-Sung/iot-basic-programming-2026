@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Chap04-01-app/Chap04-01-app.vcxproj" Id="8f947e8c-b1fe-48fb-bb05-9112b253fb5e" />
+  <Project Path="Chap04-quiz-1/Chap04-quiz-1.vcxproj" Id="60f86c21-5a4f-4600-85da-22427ffc9975" />
+  <Project Path="Chap04-quiz-2/Chap04-quiz-2.vcxproj" Id="2162f8e2-ee3d-42d2-931c-3eb0c1608590" />
+  <Project Path="Chap04-quiz-4/Chap04-quiz-4.vcxproj" Id="b8370ba9-5c2a-4bbc-96b3-2cfdea05e208" />
+</Solution>
