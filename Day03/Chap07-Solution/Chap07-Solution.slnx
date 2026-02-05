@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Chap07-01-app/Chap07-01-app.vcxproj" />
+  <Project Path="Chap07-01-app/Chap07-01-app.vcxproj" Id="665b9df9-0728-4b1a-96b2-3ddfd113b052" />
+  <Project Path="Chap07-02-app/Chap07-02-app.vcxproj" Id="aec9a75b-68aa-48c4-85d2-2651bc9fd1a8" />
+  <Project Path="Chap07-03-app/Chap07-03-app.vcxproj" Id="44ec2d6a-d233-4f9f-b10b-ff97762bed30" />
 </Solution>
