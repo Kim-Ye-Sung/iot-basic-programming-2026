@@ -32,14 +32,6 @@ void TimeCal(int* Time1, int lengTime, int Time2, int Time3)
     {
         *Time1 = Time3;
     }
-    else if (*Time1 <= 0)
-    {
-        *Time1 = 0;
-    }
-    else if (*Time1 >= lengTime)
-    {
-        *Time1 = lengTime;
-    }
 }
 
 int TimeCal2(int Time, string b)
@@ -80,15 +72,29 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
     {
         if (commands[i] == "next")
         {
-            PosTime += 10;
-            PosTime = TimeCal2(PosTime, "+");
-            TimeCal(&PosTime, lenTime, OpTime, Op_EndTime);
+            if (lenTime - 10 <= PosTime)
+            {
+                PosTime = lenTime;
+            }
+            else
+			{
+				PosTime += 10;
+				PosTime = TimeCal2(PosTime, "+");
+				TimeCal(&PosTime, lenTime, OpTime, Op_EndTime);
+			}
         }
         else
         {
-            PosTime -= 10;
-            PosTime = TimeCal2(PosTime, "+");
-            TimeCal(&PosTime, lenTime, OpTime, Op_EndTime);
+            if (PosTime - 10 <= 0)
+            {
+                PosTime = 0;
+            }
+            else
+            {
+                PosTime -= 10;
+                PosTime = TimeCal2(PosTime, "+");
+                TimeCal(&PosTime, lenTime, OpTime, Op_EndTime);
+            }
         }
     }
 
