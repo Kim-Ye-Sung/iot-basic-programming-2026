@@ -24,7 +24,7 @@ int main()
 
 	if (ifp == NULL)
 	{
-		printf("입력파일 오픈 실패!\n");	// 문자열을 utf8로 변환 출력!
+		printf(u8"입력파일 오픈 실패!\n");	// 문자열을 utf8로 변환 출력!
 		exit(1);
 	}
 
@@ -32,7 +32,7 @@ int main()
 
 	if (ofp == NULL)
 	{
-		printf("출력파일 생성 실패\n");
+		printf(u8"출력파일 생성 실패\n");
 		exit(1);
 	}
 
@@ -53,7 +53,7 @@ int main()
 		fprintf(ofp, "%s%5d%7.1f\n", name, total, avg);	// 파일에 출력
 	}
 
-	printf("파일 복사 완료\n");
+	printf(u8"파일 복사 완료\n");
 
 	// 파일 포인터 해제
 	fclose(ifp); fclose(ofp);
