@@ -53,7 +53,7 @@ int main()
 
 		//str[strlen(str) - 1] = '\0';  // \n -> \0 바꿔줘서
 		fputs(str, ofp);
-		//fputs(" ", ofp);  // 한줄 끝난뒤 스페이스 추가.
+		//fputs(" ", ofp);  // 한줄 끝난뒤 스페이스 추가.	
 	}
 
 	printf("텍스트 파일 복사 성공\n");

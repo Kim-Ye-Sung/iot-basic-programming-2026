@@ -7,8 +7,8 @@ double average(void);
 void print_data(double);
 
 // 전역변수!
-int count = 0;
-static int total = 0;  // 정적. 소스코드가 실행되는 동안 끝까지 살아남는 변수
+int count = 0;		   // extern으로 지정된 부분과 공유
+static int total = 0;  // main.c 내에서만 사용하는 변수
 
 int main(void)
 {
